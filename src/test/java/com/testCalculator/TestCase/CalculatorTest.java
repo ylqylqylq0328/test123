@@ -2,6 +2,7 @@ package com.testCalculator.TestCase;
 
 import com.testCalculator.Page.CalculatorPage;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -9,14 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTest extends AbstractTest {
 
-    @ParameterizedTest(name = "{index} => input={0}, result={1}, input_expression={2}")
-    @CsvSource({
 
-            "1,               '', 1",
-            "1+1=,            2 , 1+1",
-            "1234567890+-*/,  '', 1234567890+-×/",
-            "1234567890+-*/D, '', 1234567890+-×",
-    })
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/TC1_KeyResponse.csv", numLinesToSkip = 1)
     public void testTC1_KeyResponse(String input, String result, String input_expression) {
         CalculatorPage calculatorPage = new CalculatorPage(driver);
         calculatorPage.Actions(input);
