@@ -13,7 +13,7 @@ Totally there are 43 test cases: 34 are successful and 9 failed. Please see "Bug
     TC3 Order Of Operation
     TC4 Negative Number
     TC5 Decimal Result
-    TC6 Repeating Decimal Result
+    TC6 Rounding Result
     TC7 Zero Operation
     TC8 Big Data Operation
     TC9 Del Key Operation
@@ -22,14 +22,14 @@ Totally there are 43 test cases: 34 are successful and 9 failed. Please see "Bug
     TC12 Expression Display
 
 ### Bug
-1 Repeating Decimal Operation Abnormality.
+1 Rounding Abnormality.
 
     Case No | Expression | Expected Result   | Actual Result     | Result
     1       | 1/3*2=     | 0.6666666666666667| 0.6666666666666666| Failure
     2       | 1+1/3*2=   | 1.6666666666666667| 1.6666666666666665| Failure
     3       | 100+1/3*2= | 100.66666666666667| 100.66666666666667| Pass
 
-The same rule should be used when we round a repeating decimal.
+The same rule should be used when we round a number.
 
 2 Use of inappropriate error messages
 

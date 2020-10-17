@@ -89,7 +89,7 @@ public class CalculatorTest extends AbstractTest {
             "1+1/3*2=,   1.6666666666666667",
             "100+1/3*2=, 100.66666666666667",
     })
-    public void testTC6_RepeatingDecimalResult(String input, String result) {
+    public void testTC6_RoundingResult(String input, String result) {
         CalculatorPage calculatorPage = new CalculatorPage(driver);
         calculatorPage.Actions(input);
         assertEquals(result, calculatorPage.getOutput());
