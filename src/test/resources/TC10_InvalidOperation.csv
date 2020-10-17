@@ -1,0 +1,5 @@
+input, result
+1+-=, ERR
++-1=, ERR
+*/1=, ERR
+*/1=, ERR

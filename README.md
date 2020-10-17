@@ -56,9 +56,10 @@ the scientific notation to round the number.
 5 Multiple Equality Sign
 
     Case No | Expression | Expected Result | Actual Result | Expected Expression |Actual Expression |Result
-    1       | 1+1=2+2=   | 4               | 17            | 3+3                 |1+13+3            |Failure
+    1       | 1+1=3+3=   | 4               | 17            | 3+3                 |1+13+3            |Failure
     
-The reason is that the input needs to be cleared after the result appears and before we can perform next operations.
+The calculator cannot clear up the previous input 1+1 after clicking “=“. 
+So when we click “3”, the expression becomes 1+13, which will cause the wrong result for the next calculation.
 
 6 Expression Display
 
@@ -66,7 +67,7 @@ The reason is that the input needs to be cleared after the result appears and be
     1       | 1+05=      | 1+5                 | 1+05              | Failure
     1       | 05+1=      | 5+1                 | 05+1              | Failure
     
-We should change the input's formatting when the first digit of a number is zero.    
+We should eliminate the leading zero of the digit number input.    
 
 7 Other Bugs
   
