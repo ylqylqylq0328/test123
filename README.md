@@ -8,23 +8,15 @@ Test Simple Calculator.
 ### Test cases
 Totally there are 30 test cases: 24 are successful and 6 failed. Please see "Bug" section for bugs' analysis.
 
-Basic Operation
-
-Order Of Operation
-
-Decimal Operation
-
-Zero Operation
-
-Big Data Operation
-
-Del Operation
-
-Error Operation
-
-Multiple Equality Sign
-
-Expression Display
+    Basic Operation
+    Order Of Operation
+    Decimal Operation
+    Zero Operation
+    Big Data Operation
+    Del Operation
+    Error Operation
+    Multiple Equality Sign
+    Expression Display
 
 ### Bug
 1 Decimal Operation Abnormal.
