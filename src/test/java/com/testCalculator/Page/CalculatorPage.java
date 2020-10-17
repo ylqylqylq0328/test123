@@ -31,7 +31,7 @@ public class CalculatorPage extends PageObject {
     private WebElement Plus;
     @FindBy(xpath = "//button[@value='-']")
     private WebElement Minus;
-    @FindBy(xpath = "//button[@value='×']")
+    @FindBy(xpath = "//html/body/div/div[3]/button[15]")
     private WebElement Mult;
     @FindBy(xpath = "//button[@value='/']")
     private WebElement Div;

@@ -65,7 +65,7 @@ So when we click “3”, the expression becomes 1+13, which will cause the wron
 
     Case No | Expression | Expected Expression | Actual Expression | Result
     1       | 1+05=      | 1+5                 | 1+05              | Failure
-    1       | 05+1=      | 5+1                 | 05+1              | Failure
+    2       | 05+1=      | 5+1                 | 05+1              | Failure
     
 We should eliminate the leading zero of the digit number input.    
 
